@@ -7,7 +7,7 @@
 void taoMaTran(int a[MAX][MAX], int m, int n, int maxVal);
 void xuatMaTran(int a[MAX][MAX], int m, int n);
 void xuatCotChan(int a[MAX][MAX], int m, int n);
-
+void timMaxBien(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -52,6 +52,9 @@ int main() {
             case 2:
                 xuatCotChan(a, m, n);
                 break;
+            case 3:
+                timMaxBien(a, m, n);
+                break;
             case 0:
                 exit(0);
             default:
@@ -95,4 +98,16 @@ void xuatCotChan(int a[MAX][MAX], int m, int n) {
             printf("\n");
         }
     }
+}
+void timMaxBien(int a[MAX][MAX], int m, int n) {
+    int max = a[0][0];
+    for (int i = 0; i < m; i++) {
+        if (a[i][0] > max) max = a[i][0];
+        if (a[i][n - 1] > max) max = a[i][n - 1];
+    }
+    for (int j = 0; j < n; j++) {
+        if (a[0][j] > max) max = a[0][j];
+        if (a[m - 1][j] > max) max = a[m - 1][j];
+    }
+    printf("Phan tu lon nhat tren bien: %d\n", max);
 }
