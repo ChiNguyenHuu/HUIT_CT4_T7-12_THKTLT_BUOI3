@@ -11,6 +11,7 @@ void timMaxBien(int a[MAX][MAX], int m, int n);
 int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
 void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
 void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
+void sapXepCotMaTran(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -66,6 +67,10 @@ int main() {
                 break;
             case 6:
                 sapXepDongMaTran(a, m, n);
+                xuatMaTran(a, m, n);
+                break;
+            case 7:
+                sapXepCotMaTran(a, m, n);
                 xuatMaTran(a, m, n);
                 break;
             case 0:
@@ -158,6 +163,19 @@ void sapXepDongMaTran(int a[MAX][MAX], int m, int n) {
                     int temp = a[i][j];
                     a[i][j] = a[i][k];
                     a[i][k] = temp;
+                }
+            }
+        }
+    }
+}
+void sapXepCotMaTran(int a[MAX][MAX], int m, int n) {
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < m - 1; i++) {
+            for (int k = i + 1; k < m; k++) {
+                if ((j % 2 == 1 && a[i][j] < a[k][j]) || (j % 2 == 0 && a[i][j] > a[k][j])) {
+                    int temp = a[i][j];
+                    a[i][j] = a[k][j];
+                    a[k][j] = temp;
                 }
             }
         }
