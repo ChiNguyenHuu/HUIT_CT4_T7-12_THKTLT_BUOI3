@@ -9,6 +9,7 @@ void xuatMaTran(int a[MAX][MAX], int m, int n);
 void xuatCotChan(int a[MAX][MAX], int m, int n);
 void timMaxBien(int a[MAX][MAX], int m, int n);
 int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
+void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -58,6 +59,9 @@ int main() {
                 break;
             case 4:
                 printf("So luong phan tu co chu so '2': %d\n", demPhanTuCoChuSo2(a, m, n));
+                break;
+            case 5:
+                xuatMinPhanTu(a, m, n);
                 break;
             case 0:
                 exit(0);
@@ -130,4 +134,14 @@ int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n) {
         }
     }
     return dem;
+}
+
+void xuatMinPhanTu(int a[MAX][MAX], int m, int n) {
+    int min = a[0][0];
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] < min) min = a[i][j];
+        }
+    }
+    printf("Phan tu nho nhat trong ma tran: %d\n", min);
 }
