@@ -6,7 +6,7 @@
 
 void taoMaTran(int a[MAX][MAX], int m, int n, int maxVal);
 void xuatMaTran(int a[MAX][MAX], int m, int n);
-
+void xuatCotChan(int a[MAX][MAX], int m, int n);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -49,7 +49,9 @@ int main() {
                 taoMaTran(a, m, n, maxVal);
                 xuatMaTran(a, m, n);
                 break;
-           
+            case 2:
+                xuatCotChan(a, m, n);
+                break;
             case 0:
                 exit(0);
             default:
@@ -76,4 +78,21 @@ void xuatMaTran(int a[MAX][MAX], int m, int n) {
         printf("\n");
     }
 }
-
+void xuatCotChan(int a[MAX][MAX], int m, int n) {
+    for (int j = 0; j < n; j++) {
+        int tatCaChan = 1;
+        for (int i = 0; i < m; i++) {
+            if (a[i][j] % 2 != 0) {
+                tatCaChan = 0;
+                break;
+            }
+        }
+        if (tatCaChan) {
+            printf("Cot %d chua chi so chan:\n", j);
+            for (int i = 0; i < m; i++) {
+                printf("%d\t", a[i][j]);
+            }
+            printf("\n");
+        }
+    }
+}
