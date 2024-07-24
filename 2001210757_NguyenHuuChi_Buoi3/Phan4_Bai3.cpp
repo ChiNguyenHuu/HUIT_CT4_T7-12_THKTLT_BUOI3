@@ -19,6 +19,7 @@ void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n);
 void hoanViCot(int a[MAX][MAX], int m, int n, int i, int j);
+void hoanViDong(int a[MAX][MAX], int m, int n, int k, int l);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -108,6 +109,17 @@ int main() {
                 }
                 else {
                     printf("Chi so cot khong hop le.\n");
+                }
+                break;
+            case 15:
+                printf("Nhap chi so hai dong can hoan vi (k l): ");
+                scanf("%d %d", &k, &l);
+                if (k >= 0 && k < m && l >= 0 && l < m) {
+                    hoanViDong(a, m, n, k, l);
+                    xuatMaTran(a, m, n);
+                }
+                else {
+                    printf("Chi so dong khong hop le.\n");
                 }
                 break;
             case 0:
@@ -338,5 +350,12 @@ void hoanViCot(int a[MAX][MAX], int m, int n, int i, int j) {
         int temp = a[k][i];
         a[k][i] = a[k][j];
         a[k][j] = temp;
+    }
+}
+void hoanViDong(int a[MAX][MAX], int m, int n, int k, int l) {
+    for (int j = 0; j < n; j++) {
+        int temp = a[k][j];
+        a[k][j] = a[l][j];
+        a[l][j] = temp;
     }
 }
