@@ -17,6 +17,7 @@ void lietKeDongChan(int a[MAX][MAX], int m, int n);
 void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
+void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -93,6 +94,9 @@ int main() {
                 break;
             case 12:
                 timChuSoXuatHienNhieuNhat(a, m, n);
+                break;
+            case 13:
+                lietKeCotCoTongNhoNhat(a, m, n);
                 break;
             case 0:
                 exit(0);
@@ -296,6 +300,24 @@ void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n) {
     for (int i = 0; i < 10; i++) {
         if (chuSo[i] == maxCount) {
             printf("%d\n", i);
+        }
+    }
+}
+void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n) {
+    int tong[MAX] = { 0 };
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            tong[j] += a[i][j];
+        }
+    }
+    int minSum = tong[0];
+    for (int j = 1; j < n; j++) {
+        if (tong[j] < minSum) minSum = tong[j];
+    }
+    printf("Cot co tong nho nhat:\n");
+    for (int j = 0; j < n; j++) {
+        if (tong[j] == minSum) {
+            printf("Cot %d\n", j);
         }
     }
 }
