@@ -12,6 +12,7 @@ int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
 void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
 void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
 void sapXepCotMaTran(int a[MAX][MAX], int m, int n);
+int kiemTraZigzag(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -72,6 +73,9 @@ int main() {
             case 7:
                 sapXepCotMaTran(a, m, n);
                 xuatMaTran(a, m, n);
+                break;
+            case 8:
+                printf("Ma tran %s sap xep theo thu tu zigzag.\n", kiemTraZigzag(a, m, n) ? "da" : "khong da");
                 break;
             case 0:
                 exit(0);
@@ -180,4 +184,27 @@ void sapXepCotMaTran(int a[MAX][MAX], int m, int n) {
             }
         }
     }
+}
+int kiemTraZigzag(int a[MAX][MAX], int m, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            if (i % 2 == 0) {
+                if (a[i][j] >= a[i][j + 1]) return 0;
+            }
+            else {
+                if (a[i][j] <= a[i][j + 1]) return 0;
+            }
+        }
+    }
+    for (int j = 0; j < n; j++) {
+        for (int i = 0; i < m - 1; i++) {
+            if (j % 2 == 0) {
+                if (a[i][j] >= a[i + 1][j]) return 0;
+            }
+            else {
+                if (a[i][j] <= a[i + 1][j]) return 0;
+            }
+        }
+    }
+    return 1;
 }
