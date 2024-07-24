@@ -14,6 +14,7 @@ void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
 void sapXepCotMaTran(int a[MAX][MAX], int m, int n);
 int kiemTraZigzag(int a[MAX][MAX], int m, int n);
 void lietKeDongChan(int a[MAX][MAX], int m, int n);
+void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -81,6 +82,8 @@ int main() {
             case 9:
                 lietKeDongChan(a, m, n);
                 break;
+            case 10:
+                lietKeDongGiamDan(a, m, n);
             case 0:
                 exit(0);
             default:
@@ -223,6 +226,20 @@ void lietKeDongChan(int a[MAX][MAX], int m, int n) {
         }
         if (toanChan) {
             printf("Dong %d chua toan gia tri chan.\n", i);
+        }
+    }
+}
+void lietKeDongGiamDan(int a[MAX][MAX], int m, int n) {
+    for (int i = 0; i < m; i++) {
+        int giamDan = 1;
+        for (int j = 0; j < n - 1; j++) {
+            if (a[i][j] <= a[i][j + 1]) {
+                giamDan = 0;
+                break;
+            }
+        }
+        if (giamDan) {
+            printf("Dong %d chua gia tri giam dan.\n", i);
         }
     }
 }
