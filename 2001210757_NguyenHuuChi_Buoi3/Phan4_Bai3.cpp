@@ -16,6 +16,7 @@ int kiemTraZigzag(int a[MAX][MAX], int m, int n);
 void lietKeDongChan(int a[MAX][MAX], int m, int n);
 void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
+void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -89,6 +90,9 @@ int main() {
                 break;
             case 11:
                 timGiaTriXuatHienNhieuNhat(a, m, n);
+                break;
+            case 12:
+                timChuSoXuatHienNhieuNhat(a, m, n);
                 break;
             case 0:
                 exit(0);
@@ -267,6 +271,30 @@ void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n) {
     printf("Gia tri xuat hien nhieu nhat:\n");
     for (int i = 0; i < MAX * MAX; i++) {
         if (giaTri[i] == maxCount) {
+            printf("%d\n", i);
+        }
+    }
+}
+void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n) {
+    int chuSo[10] = { 0 };
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            int num = a[i][j];
+            while (num) {
+                chuSo[num % 10]++;
+                num /= 10;
+            }
+        }
+    }
+    int maxCount = 0;
+    for (int i = 0; i < 10; i++) {
+        if (chuSo[i] > maxCount) {
+            maxCount = chuSo[i];
+        }
+    }
+    printf("Chu so xuat hien nhieu nhat:\n");
+    for (int i = 0; i < 10; i++) {
+        if (chuSo[i] == maxCount) {
             printf("%d\n", i);
         }
     }
