@@ -10,6 +10,7 @@ void xuatCotChan(int a[MAX][MAX], int m, int n);
 void timMaxBien(int a[MAX][MAX], int m, int n);
 int demPhanTuCoChuSo2(int a[MAX][MAX], int m, int n);
 void xuatMinPhanTu(int a[MAX][MAX], int m, int n);
+void sapXepDongMaTran(int a[MAX][MAX], int m, int n);
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -62,6 +63,10 @@ int main() {
                 break;
             case 5:
                 xuatMinPhanTu(a, m, n);
+                break;
+            case 6:
+                sapXepDongMaTran(a, m, n);
+                xuatMaTran(a, m, n);
                 break;
             case 0:
                 exit(0);
@@ -144,4 +149,17 @@ void xuatMinPhanTu(int a[MAX][MAX], int m, int n) {
         }
     }
     printf("Phan tu nho nhat trong ma tran: %d\n", min);
+}
+void sapXepDongMaTran(int a[MAX][MAX], int m, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            for (int k = j + 1; k < n; k++) {
+                if ((i % 2 == 1 && a[i][j] > a[i][k]) || (i % 2 == 0 && a[i][j] < a[i][k])) {
+                    int temp = a[i][j];
+                    a[i][j] = a[i][k];
+                    a[i][k] = temp;
+                }
+            }
+        }
+    }
 }
