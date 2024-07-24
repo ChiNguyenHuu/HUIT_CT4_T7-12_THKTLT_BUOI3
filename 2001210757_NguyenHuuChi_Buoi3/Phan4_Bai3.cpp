@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -15,6 +15,8 @@ void sapXepCotMaTran(int a[MAX][MAX], int m, int n);
 int kiemTraZigzag(int a[MAX][MAX], int m, int n);
 void lietKeDongChan(int a[MAX][MAX], int m, int n);
 void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
+void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
+
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
 
@@ -84,6 +86,10 @@ int main() {
                 break;
             case 10:
                 lietKeDongGiamDan(a, m, n);
+                break;
+            case 11:
+                timGiaTriXuatHienNhieuNhat(a, m, n);
+                break;
             case 0:
                 exit(0);
             default:
@@ -240,6 +246,28 @@ void lietKeDongGiamDan(int a[MAX][MAX], int m, int n) {
         }
         if (giamDan) {
             printf("Dong %d chua gia tri giam dan.\n", i);
+        }
+    }
+}
+void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n) {
+    int giaTri[MAX * MAX] = { 0 }; // Mảng đếm số lần xuất hiện của các giá trị
+    int maxCount = 0;
+
+    // Đếm số lần xuất hiện của các giá trị
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            giaTri[a[i][j]]++;
+            if (giaTri[a[i][j]] > maxCount) {
+                maxCount = giaTri[a[i][j]];
+            }
+        }
+    }
+
+    // In các giá trị xuất hiện nhiều nhất
+    printf("Gia tri xuat hien nhieu nhat:\n");
+    for (int i = 0; i < MAX * MAX; i++) {
+        if (giaTri[i] == maxCount) {
+            printf("%d\n", i);
         }
     }
 }
