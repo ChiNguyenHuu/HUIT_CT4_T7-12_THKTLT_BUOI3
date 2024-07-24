@@ -18,6 +18,7 @@ void lietKeDongGiamDan(int a[MAX][MAX], int m, int n);
 void timGiaTriXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void timChuSoXuatHienNhieuNhat(int a[MAX][MAX], int m, int n);
 void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n);
+void hoanViCot(int a[MAX][MAX], int m, int n, int i, int j);
 
 int main() {
     int a[MAX][MAX], m, n, luaChon, maxVal, i, j, k, l;
@@ -97,6 +98,17 @@ int main() {
                 break;
             case 13:
                 lietKeCotCoTongNhoNhat(a, m, n);
+                break;
+            case 14:
+                printf("Nhap chi so hai cot can hoan vi (i j): ");
+                scanf("%d %d", &i, &j);
+                if (i >= 0 && i < n && j >= 0 && j < n) {
+                    hoanViCot(a, m, n, i, j);
+                    xuatMaTran(a, m, n);
+                }
+                else {
+                    printf("Chi so cot khong hop le.\n");
+                }
                 break;
             case 0:
                 exit(0);
@@ -319,5 +331,12 @@ void lietKeCotCoTongNhoNhat(int a[MAX][MAX], int m, int n) {
         if (tong[j] == minSum) {
             printf("Cot %d\n", j);
         }
+    }
+}
+void hoanViCot(int a[MAX][MAX], int m, int n, int i, int j) {
+    for (int k = 0; k < m; k++) {
+        int temp = a[k][i];
+        a[k][i] = a[k][j];
+        a[k][j] = temp;
     }
 }
