@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9CE3DEB4-1C97-4F45-AD21-EE6FD7EBCEEA}|2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3.vcxproj|D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9CE3DEB4-1C97-4F45-AD21-EE6FD7EBCEEA}|2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3.vcxproj|solutionrelative:2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9CE3DEB4-1C97-4F45-AD21-EE6FD7EBCEEA}|2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3.vcxproj|D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Phan4_Bai3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9CE3DEB4-1C97-4F45-AD21-EE6FD7EBCEEA}|2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3.vcxproj|solutionrelative:2001210757_NguyenHuuChi_Buoi3\\Phan4_Bai3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Bai4.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp",
+              "RelativeDocumentMoniker": "2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp*",
+              "RelativeToolTip": "2001210757_NguyenHuuChi_Buoi3\\Bai4.cpp*",
+              "ViewState": "AQIAADgBAAAAAAAAAAAowGoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-24T09:34:41.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Phan4_Bai3.cpp",
               "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Phan4_Bai3.cpp",
               "RelativeDocumentMoniker": "2001210757_NguyenHuuChi_Buoi3\\Phan4_Bai3.cpp",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Bai2.cpp",
               "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Bai2.cpp",
               "RelativeDocumentMoniker": "2001210757_NguyenHuuChi_Buoi3\\Bai2.cpp",
@@ -47,12 +64,11 @@
               "RelativeToolTip": "2001210757_NguyenHuuChi_Buoi3\\Bai2.cpp",
               "ViewState": "AQIAAJAAAAAAAAAAAAAowLAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-24T07:01:16.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T07:01:16.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Bai1.cpp",
               "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\Bai1.cpp",
               "RelativeDocumentMoniker": "2001210757_NguyenHuuChi_Buoi3\\Bai1.cpp",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "2001210757_NguyenHuuChi_Buoi3\\Bai1.cpp",
               "ViewState": "AQIAAMgAAAAAAAAAAAAowOgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-24T05:59:20.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T05:59:20.513Z"
             }
           ]
         }
