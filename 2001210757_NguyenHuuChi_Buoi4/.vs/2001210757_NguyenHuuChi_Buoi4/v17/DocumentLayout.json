@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2157489-00D6-4B46-9550-C2BD7840DDAA}|2001210757_NguyenHuuChi_Buoi4\\2001210757_NguyenHuuChi_Buoi4.vcxproj|D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi4\\2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2157489-00D6-4B46-9550-C2BD7840DDAA}|2001210757_NguyenHuuChi_Buoi4\\2001210757_NguyenHuuChi_Buoi4.vcxproj|solutionrelative:2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai1.cpp",
+              "DocumentMoniker": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi4\\2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp",
+              "RelativeDocumentMoniker": "2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp",
+              "ToolTip": "D:\\HK3 nam 3\\HUIT_CT4_T7-12_THKTLT_Buoi3\\2001210757_NguyenHuuChi_Buoi3\\2001210757_NguyenHuuChi_Buoi4\\2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp",
+              "RelativeToolTip": "2001210757_NguyenHuuChi_Buoi4\\Bai1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-25T06:49:17.076Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
