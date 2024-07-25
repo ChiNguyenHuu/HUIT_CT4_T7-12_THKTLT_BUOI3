@@ -1,5 +1,13 @@
 ﻿  Bai1.cpp
   Bai2.cpp
   Bai3.cpp
+  Bai4.cpp
+  Bai5.cpp
+  Bai6.cpp
   Generating Code...
+D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\2001210757_NguyenHuuChi_Buoi4\Bai6.cpp(17,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\2001210757_NguyenHuuChi_Buoi4\Bai6.cpp(35,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\2001210757_NguyenHuuChi_Buoi4\Bai6.cpp(36,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\2001210757_NguyenHuuChi_Buoi4\Bai6.cpp(55,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\2001210757_NguyenHuuChi_Buoi4\Bai6.cpp(88,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   2001210757_NguyenHuuChi_Buoi4.vcxproj -> D:\HK3 nam 3\HUIT_CT4_T7-12_THKTLT_Buoi3\2001210757_NguyenHuuChi_Buoi3\2001210757_NguyenHuuChi_Buoi4\x64\Debug\2001210757_NguyenHuuChi_Buoi4.exe
